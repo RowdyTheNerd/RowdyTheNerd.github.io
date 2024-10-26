@@ -24,18 +24,43 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
         <a class="w3-bar-item w3-hover-purple">more pages coming soon!</a>
     </div>
     
-    <div class="w3-sidebar w3-bar-block w3-deep-orange" style="width:25%">
+    <div class="w3-sidebar w3-bar-block w3-light-blue" style="width:25%">
         <p class="w3-bar-item w3-button w3-hover-purple">current projects:</p>
-        <a href="#" class="w3-bar-item w3-button w3-hover-blue">Website</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-blue">Fonts</a> 
-        <a href="#" class="w3-bar-item w3-button w3-hover-blue">Ante Suno</a>
-      </div>
+        <button class="w3-bar-item w3-button w3-hover-blue" onclick="openProject('Website')">Website</button>
+        <button class="w3-bar-item w3-button w3-hover-blue" onclick="openProject('Fonts')">Fonts</button> 
+        <button class="w3-bar-item w3-button w3-hover-blue" onclick="openProject('Ante Suno')">Ante Suno</button>
+    </div>
+    <script>
+    function openProject(projectName) {
+        var i;
+        var x = document.getElementsByClassName("Project");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(projectName).style.display = "block";
+    }
+    </script>
+
+    <div id="main content" class="w3-padding"style="margin-left: 25%">
+        <div id="Website" class="Project">
+            <h2>Website</h2>
+            <p>my most recent project is this website itself! ive been having a lot of fun playing around with it.
+            </p>
+        </div>
+        
+        <div id="Fonts" class="Project" style="display:none">
+            <h2>Fonts</h2>
+            <p>For a fun project this summer, i decided to decide some fonts.</p>
+        </div>
+        
+        <div id="Ante Suno" class="Project" style="display:none">
+            <h2>Ante Suno</h2>
+            <p>This is a project i started in summer of 2024. It was nearly finished, but it still needs a few tweaks before i feel like its ready for release.</p>
+        </div>
+    </div>
 
 
-
-
-
-    <div class="w3-orange w3-center">
+    <div class="w3-orange w3-center" style="margin-left:25%">
         <h2><b>UNDER CONSTRUCTION!!!</b></h2>
         <p><i>this website is <b>VERY</b> unfinished. thank you for your patience.</i></p>
         <img src="images/underConstruction.gif" alt="A gif of a construction worker stylized as a road sign." style="width:10%">
