@@ -19,6 +19,7 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
     <div class="w3-bar w3-orange w3-card">
         <a href="index.html" class="w3-bar-item w3-button w3-hover-blue w3-ripple">HOME</a>
         <a href="othersites.html" class="w3-bar-item w3-button w3-hover-blue w3-ripple">OTHER SITES</a>
+        <a href="projects.html" class="w3-bar-item w3-button w3-hover-blue w3-ripple"><b>PROJECTS</b></a>
         <a href="#" class="w3-bar-item w3-button w3-disabled w3-hover-blue w3-ripple">CONTACT ME</a>
         <a href="#" class="w3-bar-item w3-button w3-disabled w3-hover-blue w3-ripple">ABOUT ME</a>
         <a class="w3-bar-item w3-hover-purple">more pages coming soon!</a>
@@ -27,8 +28,11 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
     <div class="w3-sidebar w3-bar-block w3-light-blue" style="width:25%">
         <p class="w3-bar-item w3-button w3-hover-purple">current projects:</p>
         <button class="w3-bar-item w3-button w3-hover-blue" onclick="openProject('Website')">Website</button>
-        <button class="w3-bar-item w3-button w3-hover-blue" onclick="openProject('Fonts')">Fonts</button> 
+        <button class="w3-bar-item w3-button w3-hover-blue" onclick="openProject('Distype')">Distype</button> 
         <button class="w3-bar-item w3-button w3-hover-blue" onclick="openProject('Ante Suno')">Ante Suno</button>
+        <p class="w3-bar-item w3-button w3-hover-purple">previous projects:</p>
+        <button class="w3-bar-item w3-button w3-hover-blue" onclick="openProject('TOT')">Object Tournament</button>
+
     </div>
     <script>
     function openProject(projectName) {
@@ -44,18 +48,62 @@ h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
     <div id="main content" class="w3-padding"style="margin-left: 25%">
         <div id="Website" class="Project">
             <h2>Website</h2>
-            <p>my most recent project is this website itself! ive been having a lot of fun playing around with it.
+            <p>My most recent project is this website itself! ive been having a lot of fun playing around with it.
+                I've wanted to make my own website for a very long time. 
+                During the autumn of 2024, I was attending computer science club, and one of our first was to design a website.
+                It was casually mentioned during the meeting that making a website through github is shockingly easy.
+                So, after the meeting, I immediately got to work designing my website. 
+                It still has a long way to go as of writing this, but im v happy with the progress so far!! 
             </p>
+            <p>if you want to check the website out, then i have wonderful news.</p>
+            <a href="projects.html" class="w3-button w3-yellow w3-margin w3-round">Check it out!</a>
+
         </div>
         
-        <div id="Fonts" class="Project" style="display:none">
-            <h2>Fonts</h2>
-            <p>For a fun project this summer, i decided to decide some fonts.</p>
+        <div id="Distype" class="Project" style="display:none">
+            <h2>Distype</h2>
+            <p>While working on my game during the summer of 2024 (see: Ante Suno), I realized 2 things:
+            <ol>
+                <li>I need a pixel font, and i dont't know where to find one.</li>
+                <li>I've wanted to make a font for a while now, and this would be a great excuse to start.</li>
+            </ol>
+            So, obviously, i hyperfixated for about a month on the project.
+            My font pack now includes 6 fonts, including 2 bold fonts, a sans-serif font, a serif font, a monotype font, and one silly one.
+            I will likely expand the collection in the future, but im happy with the current release. 
+            You can find all the fonts on my Itch.io page. THey are free to use for everyone! 
+            If you find a use for em, i hope you have fun with em, and pls send me whatever you make :3 
+            </p>
+            <a href="https://dystthedragon.itch.io/distype" class="w3-button w3-yellow w3-margin w3-round">Check it out!</a>
         </div>
         
         <div id="Ante Suno" class="Project" style="display:none">
             <h2>Ante Suno</h2>
-            <p>This is a project i started in summer of 2024. It was nearly finished, but it still needs a few tweaks before i feel like its ready for release.</p>
+            <p>This is a project i started in summer of 2024. 
+                The beta was nearly finished, but it still needs a few tweaks before I feel like its ready for release.
+                Ante Suno is a retro puzzle game about navigating a house in the dark. 
+                It was based on an experience i had while visiting my dad's side of the family, 
+                and struggling to remember which switches did what.
+                The objective of each level is to get back to bed with as few lights left on as possible. 
+                There is still a long ways to go before the game is actually fun and playable. 
+                Unfortunately, development was interrupted when i had to go back to University at the end of the summer. 
+                It has since been on hiatus due to a lack of motivation and free time. 
+                however, id still like to come back to it some day.
+            </p>
+        </div>
+
+        <div id="TOT" class="Project" style="display:none">
+            <h2>the Tumblr Object Tournament</h2>
+            <p>Back when polls were first added to tumblr, there was a huge surge of tournament-style blogs.
+                Each blog would have a theme and a long list of contestants, usually 32-64. 
+                I thought this would be fun, so My contribution to the bandwagon was the Tumblr Object Tournament.</p>
+            <p>Each matchup would have 2 random household objects being pitted against eachother. 
+                the objects were typically those that you might find around the house or on a desk, but there were some exceptions.
+                for example, one suggestion that i was hesitant to implement (but added anyways) was uranium pellets.
+                I initially said no, but they technically did not violate any rules, since you could safely hold them in your hand.</p>
+            <p>The project has long since been abandoned, and I likely will not continue it anytime soon. 
+                Regardless, it was a fun way to occupy my time over the summer.
+                If you want to check out the remains of it all, its linked below:</p>
+            <a href="https://www.tumblr.com/object-tournament" class="w3-button w3-yellow w3-margin w3-round">Check it out!</a>
         </div>
     </div>
 
